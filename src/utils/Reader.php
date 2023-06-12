@@ -9,7 +9,7 @@ class Reader extends Singleton
      * @param string      $path     Path of CSV file
      * @return array    array of array
      */
-    function readCSV($path)
+    function readCSV($path): array
     {
         $file = fopen($path, "r");
         $arr = [];
